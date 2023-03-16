@@ -110,9 +110,11 @@ function bounce(o){
   console.log('Boing!');
 }
 
-i=0;
-
-function volray(){
-  document.getElementById('vince').style.display="block";
-  setTimeout(function(){document.getElementById('vince').style.display="none";},500)
+function shake(o){
+  o.classList.remove('fa-shake');
+  void o.offsetWidth;
+  o.classList.add('fa-shake');
+  console.log('Whoosh!');
 }
+
+i=0;
